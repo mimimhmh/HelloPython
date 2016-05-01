@@ -1,0 +1,6 @@
+A101,M,18,200,Normal,300
+A155,F,28,400,Overweight,700
+A103,F,33,567,Underweight,347
+A113,F,19,222,Normal,112
+A123,M,40,972,Obesity,900
+A144,M,35,500,Normal,700
