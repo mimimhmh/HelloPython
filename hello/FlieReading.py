@@ -3,6 +3,11 @@ import pieChartgenerator
 import BarChartCreater
 import sys
 
+'''
+ In this class:
+    help_* means to show guideline of the method we are going to invoke.
+    do_* means to invoke the method.
+'''
 
 class CmdTest(Cmd):
 
