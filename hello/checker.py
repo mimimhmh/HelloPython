@@ -58,19 +58,21 @@ class DataChecker(object):
             else:
                 print('nonono')
 
-        db = shelve.open('db.shelf', 'c')
-        db['idList'] = idList
-        db['genderList'] = gList
-        db['ageList'] = aList
-        db['saleList'] = saleList
-        db['bmiList'] = bList
-        db['incomeList'] = incomeList
-        db.close()
 
         return idList,gList,aList,saleList,bList,incomeList
 
 
-
+    def dataShelve(self):
+        list = check(getEmpList)
+        db = shelve.open('db.shelf', 'c')
+        for i in range(len(list)):
+            db['idList'] = idList
+            db['genderList'] = gList
+            db['ageList'] = aList
+            db['saleList'] = saleList
+            db['bmiList'] = bList
+            db['incomeList'] = incomeList
+        db.close()
 '''
 d = DataChecker('test.txt')
 list = d.getEmpList()
